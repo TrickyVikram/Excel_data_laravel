@@ -1,0 +1,6 @@
+
+
+composer require maatwebsite/excel
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
+php artisan make:import  DataImport  --model=Excel_data
+php artisan make:export  Dataexport  --model=Excel_data
